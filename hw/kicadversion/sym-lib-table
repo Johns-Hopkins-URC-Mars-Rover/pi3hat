@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 0)
+  (lib (name "pi3_hat-eagle-import")(type "KiCad")(uri "${KIPRJMOD}/pi3_hat-eagle-import.kicad_sym")(options "")(descr ""))
+)

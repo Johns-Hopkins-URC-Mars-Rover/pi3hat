@@ -321,7 +321,7 @@ FDCan::SendResult FDCan::Send(uint32_t dest_id,
   FDCAN_TxHeaderTypeDef tx_header;
   tx_header.Identifier = dest_id;
   tx_header.IdType = ApplyOverride(
-      dest_id >= 2048, send_options.extended_id) ?
+      dest_id >= 0x00, send_options.extended_id) ?
       FDCAN_EXTENDED_ID : FDCAN_STANDARD_ID;
   tx_header.TxFrameType =
       ApplyOverride(options_.remote_frame,
